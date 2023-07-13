@@ -1,0 +1,60 @@
+/*mobile-first design(300x600)*/
+@font-face{
+font-family: 'mainFont';
+src: url(fonts/font.otf);
+}
+
+@font-face{
+font-family: 'secondaryFont';
+src: url(fonts/font2.otf);
+}
+
+
+:root{
+--footerHeigh: 3.8vh;
+--mainHeigh: calc(100vh - var(--footerHeigh));
+--black: black;
+--white: white;
+--font1: 'mainFont';
+--font2: 'secondaryFont';
+--aqua:#00A3FF;
+--red:#2A0000;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+:root.dark{
+--black: white;
+--white: black;
+--aqua:#001A2D;
+--red:#B05353;
+}
+
+
+
+
+
+main{
+height: var(--mainHeigh);
+}
+
+footer{
+height: var(--footerHeigh);
+border-top: 2px solid var(--black);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+body{
+background-color: var(--white);
+color: var(--black);
+}
